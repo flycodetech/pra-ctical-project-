@@ -1,0 +1,28 @@
+.rock{
+    height: 10px;
+    width: 100px;
+    background-color: slategrey;
+    border-radius: 50%;
+}
+.paper{
+    height: 10px;
+    width: 100px;
+    background-color:greenyellow;
+    border-radius: 50%;
+}
+.scissors{
+    height: 10px;
+    width: 100px;
+    background-color:rebeccapurple;
+    border-radius: 50%;
+}
+.reset{
+    height: 10px;
+    width: 100px;
+    background-color:red;
+    border-radius: 50%;
+}
+.g_container{
+    display: flex;
+    justify-content: space-around;
+}

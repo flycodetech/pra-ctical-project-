@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all for Buttons </title>
+</head>
+<body>
+    <button onclick="
+     console.log(`Cart quantity: ${cartQuantity} ` );
+    ">Show Quantity</button>
+
+    <button onclick="
+    cartQuantity = cartQuantity +1;
+     console.log(`Cart quantity: ${cartQuantity} ` );">add to cart</button>
+    <button onclick="
+    cartQuantity += 2;
+     console.log(`Cart quantity: ${cartQuantity} ` );">+2</button>
+    <button onclick="
+    cartQuantity = cartQuantity +3;
+     console.log(`Cart quantity: ${cartQuantity} ` );"
+    >+3</button>
+    <button onclick="
+     cartQuantity = 0;
+     console.log('cart was reset.');
+     console.log(`cart quantity: ${cartQuantity}`);
+    ">Reset cart</button>
+
+    <script>
+        //name our variable 
+        /*the three ways of naming our variable are 
+        1. camelCase 
+        2.  pascalCase
+        3. kebab-case
+         when name your variable do not use a name that is two short or two long 
+         in javascript, we have three ways of creaTing  variable 
+         1. const
+         2. let
+         3. var
+         once you are creating a veriable that you are not going to change later. you use const
+         we can you typeof to tell us the typeof value in a variabel console.log(typeof var) 
+        */
+
+        let cartQuantity = 0;
+    </script>
+</body>
+</html>

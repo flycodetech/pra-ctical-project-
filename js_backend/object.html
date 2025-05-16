@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    
+<script>
+    /*
+    const product = {
+        name: 'socks',
+        price: 1090
+    };
+    console.log(product);
+    console.log(product.name);
+    console.log(product.price);
+
+    product.name = 'cotto socks';
+    console.log(product);
+to create an object we start with an open {inside the bracket we can put multiple values } 
+ to access the property value we type the name of the property and the item we want to access 
+ object let us to group multiple words together 
+
+ product.newProperty = true
+ console.log(prodct);
+
+ delete product.newProperty;
+ console.log(product);
+*/
+ const product2={
+    name: 'shirt',
+    ['delivery-time']: '7 days',
+    rating:{
+        stars: 4.5,
+        count: 87 //this is called nesting of object 
+    },
+    fun: function function1(){
+        console.log('function inside object '); //when we save a function inside a function it is called a function   
+    }
+ };
+  console.log(product2.name);
+  console.log(product2.name);
+  console.log(product2['name']);// this is called bracket notaiton 
+  console.log(product2['delivery-time']);//bracket notation help us use features that normally dont work with dot notation
+    console.log(product2.rating.count);
+    product2.fun();
+    console.log(typeof console);
+
+    const jsonString =JSON.stringify(product2);
+
+    console.log(JSON.stringify(product2));
+          console.log(JSON.parse(jsonString)); //this is how to convert json 
+    /*built in object
+    json  stands for javascript object notation 
+     json is a sytax 
+     json is similer to javascript object 
+     json has less features 
+     in json all properties must use double quote
+     json does not support functions 
+     a javascript sytax only make sence in javascirpt
+     why json sytax is understood by all programming language 
+     that is why we use json sytax 
+     we use json 
+     - when we are sending data between computers 
+     - when we store data 
+     build-in- jason object 
+
+    */
+     /*Local storage  another object.
+     - it is use to save values more permanently
+     note: variables are use to save value on the brower tempurarly 
+     */
+    
+</script>
+
+</body>
+</html>
